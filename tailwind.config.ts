@@ -15,6 +15,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    // Optional. We can tell Daisyui to load only the themes we need to reduce the bundle size.
+    themes: ['fantasy', 'night'],
+  },
+  // This is necessary, otherwise Tailwind will use the vendor settings to choose between light and dark theme.
+  darkMode: 'class'
 }
 export default config
