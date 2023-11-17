@@ -14,6 +14,7 @@ export function ThemeController() {
   }
 
   return <label className='swap swap-rotate' title={theme === 'fantasy' ? 'Switch to Dark' : 'Switch to Light'}>
+    {/* Daisy UI already assigns an click event listener to the component, we MUST listen for the change event in the input to not duplicated calls while both event runs. */}
     <input type='checkbox' className='theme-controller' value="night" onChange={toggleTheme}/>
 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="swap-off stroke-base-content w-8 h-8">

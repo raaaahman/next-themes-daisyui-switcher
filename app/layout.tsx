@@ -18,6 +18,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    /* Both next-themes and our own script will modify the root element in the client,
+    we should then deactivate hydration mismatch warnings. */
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         {/* next-themes uses the color-scheme CSS property to differentiate light and dark themes,
