@@ -1,3 +1,5 @@
+EDIT: There is a way simpler solution in Tailwind CSS 3.4 and higher, based upon the [selector strategy](https://tailwindcss.com/docs/dark-mode#customizing-the-selector), as described in [this comment.](https://github.com/saadeghi/daisyui/discussions/441#discussioncomment-9123782).
+
 This is a sample project to showcase how to use [next-themes](https://github.com/pacocoursey/next-themes) along with [Daisy UI](https://daisyui.com/).
 
 My issue was to use one of Daisy UI premade themes for both light and dark mode, using the browser preferences as default value, allowing to be overriden by using Daisy UI's theme controller, and having the ability to use Tailwind's `dark` modifier for occasional elements.
