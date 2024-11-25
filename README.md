@@ -34,7 +34,7 @@ next-themes uses a `ThemeProvider` component to assigns the theme to the root `<
 
 Unlike Tailwind that watch for a class name (because of the configuration we wrote earlier), Daisy UI watches for the `data-theme` attribute instead. Fortunately, that's the default attribute that next-themes' ThemeProvider will uses.
 
-`/app/prodviders.tsx`
+`/app/providers.tsx`
 
 ```typescript
 'use client'
